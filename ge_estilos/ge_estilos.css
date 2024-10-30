@@ -1,0 +1,238 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; /* Color de fondo más suave */
+    overflow-x: hidden; /* Eliminar scroll horizontal */
+}
+
+header {
+    background-color:#1f618d; /* Cambiar a un gris oscuro */
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Color al pasar el cursor */
+}
+
+section {
+    width: 90%; /* Ancho del contenido centrado */
+    max-width: 900px;
+    padding: 2.5em;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinear inputs a la izquierda */
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Fondo del formulario */
+    padding: 2em;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el formulario */
+}
+
+label {
+    margin-top: 1em;
+    text-align: left;
+    font-weight: bold; /* Negrita para etiquetas */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75em; /* Más padding para inputs */
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Transición suave */
+}
+
+input:focus, textarea:focus {
+    border-color: #ffcc00; /* Color de borde al enfocar */
+    outline: none; /* Eliminar contorno */
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.75em 1.5em; /* Más padding para botones */
+    background-color: #4a4a4a; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #555; /* Color al pasar el cursor */
+}
+
+.contenedor {
+    width: 90%; /* Ajustar ancho del contenedor */
+    max-width: 700px;        
+    margin: 0 auto;     
+    text-align: center;  
+}
+
+img {
+    width: 100%;        
+    height: auto;       
+    display: inline-block;
+}
+
+/* Sección Blog */
+.articulos {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin: 2em 0; /* Margen superior e inferior */
+}
+
+article {
+    flex: 1 1 calc(45% - 2em); /* Ajustar ancho de artículos */
+    margin: 1em; 
+    padding: 1em;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    transition: transform 0.3s; /* Transición suave */
+}
+
+article:hover {
+    background-color: #f0f0f0; 
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4a4a4a; /* Color del footer */
+    color: #fff;
+    position: relative; 
+    bottom: 0; 
+}
+
+#preguntas-frecuentes {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#preguntas-frecuentes h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#preguntas-frecuentes h3 {
+    font-size: 22px;
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+#preguntas-frecuentes h3:hover {
+    color: #004080;
+}
+
+#preguntas-frecuentes p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#preguntas-frecuentes a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+#preguntas-frecuentes a:hover {
+    text-decoration: underline;
+}
+
+#preguntas-frecuentes textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#preguntas-frecuentes button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#preguntas-frecuentes button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#preguntas-frecuentes div {
+    transition: all 0.3s ease-in-out;
+}
+
+#preguntas-frecuentes div:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.respuesta {
+    display: none;
+    margin-top: 5px;
+}
+
+.pregunta h3 {
+    cursor: pointer;
+    color: #007bff; /* Color personalizado */
+}
+
+.pregunta h3:hover {
+    text-decoration: underline;
+}
